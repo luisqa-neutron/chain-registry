@@ -1250,7 +1250,9 @@
         {
           "denom": "factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS",
           "exponent": 0,
-          "aliases": ["umars"]
+          "aliases": [
+            "umars"
+          ]
         },
         {
           "denom": "MARS",
@@ -1279,6 +1281,60 @@
         "website": "https://marsprotocol.io/",
         "twitter": "https://x.com/mars_protocol"
       }
+    },
+    {
+      "type_asset": "ics20",
+      "description": "BNB powers the BNB Chain ecosystem and is the native coin of the BNB Beacon Chain and BNB Smart Chain.",
+      "denom_units": [
+        {
+          "denom": "ibc/5CB2E12B07D0B6D8EC24A68BA6B6E6E8D5BF85B7D22091D3A480DCDD61C6AC84",
+          "exponent": 0,
+          "aliases": [
+            "wbnb",
+            "wbnb-wei"
+          ]
+        },
+        {
+          "denom": "wbnb",
+          "exponent": 18
+        }
+      ],
+      "base": "ibc/5CB2E12B07D0B6D8EC24A68BA6B6E6E8D5BF85B7D22091D3A480DCDD61C6AC84",
+      "name": "Binance Coin",
+      "display": "wbnb",
+      "symbol": "BNB",
+      "coingecko_id": "binancecoin",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "axelar",
+            "base_denom": "wbnb-wei"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg",
+          "theme": {
+            "primary_color_hex": "#f3bb0c"
+          }
+        }
+      ],
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "channel_id": "channel-78",
+            "base_denom": "wbnb-wei",
+            "chain_name": "axelar"
+          },
+          "chain": {
+            "channel_id": "channel-2",
+            "path": "transfer/channel-2/wbnb-wei"
+          }
+        }
+      ]
     }
   ]
 }
